@@ -6,4 +6,4 @@ ENV KAFKA_ADVERTISED_LISTENERS PLAINTEXT://localhost:9092
 ENV KAFKA_LISTENER_SECURITY_PROTOCOL_MAP PLAINTEXT:PLAINTEXT
 
 # Start the Kafka server
-CMD ["kafka-server-start.sh", "/etc/kafka/server.properties"]
+CMD ["/opt/bitnami/scripts/kafka/run.sh"]
